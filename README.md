@@ -40,7 +40,7 @@ Contributions are welcome! If you have any ideas, bug fixes, or feature enhancem
 
 ### Deployment
 
-I've also deployed it on: 
+I've also deployed it on: https://cms-ws7o.onrender.com/
 
 
 ### Please be careful in your tests as the linked database is really small.
