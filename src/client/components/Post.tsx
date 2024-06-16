@@ -91,7 +91,7 @@ function Post({ postID, mediaType, mediaID, Title, Content, Likes, Comments, dat
                 <div className="border border-black rounded-lg my-2">{comments.map((cmt) => {return <p className="m-2 text-start" key={cmt}>- {cmt}</p>})}</div>
                 <div className="flex flex-col lg:flex-row justify-around items-center my-2">
                     <input type="text" placeholder="Add a comment..." className="rounded-lg border border-black mx-2 min-h-12 p-2" value = {actualComment} onChange={(e) => {setActualComment(e.target.value)}} />
-                    <button type='button' className="text-white mx-2 bg-black p-2 rounded-lg" onClick = {handleCommentAddition}>Add comment</button>
+                    <button type='button' className="text-white mx-2 bg-black p-2 rounded-lg my-2" onClick = {handleCommentAddition}>Add comment</button>
                 </div>
             </div>
         </div>
