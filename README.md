@@ -4,6 +4,13 @@ Welcome to my Content Management Website project! This project aims to provide a
 
 The setup is done with Vite-Express and it is a MongoDB database.
 
+### Preview
+
+<div>
+    <img src="/public/preview1.png" alt="preview" />
+    <img src="/public/preview2.png" alt="preview" />
+</div>
+
 ### Key Features
 
 - **User-friendly Interface**: The CMS offers an intuitive and easy-to-use interface, making it simple for users to navigate and manage their content effortlessly.
@@ -40,7 +47,7 @@ Contributions are welcome! If you have any ideas, bug fixes, or feature enhancem
 
 ### Deployment
 
-I've also deployed it on: https://cms-ws7o.onrender.com/
+I've also deployed it on: https://cms-nine-henna.vercel.app/
 
 
 ### Please be careful in your tests as the linked database is really small.

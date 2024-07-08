@@ -13,13 +13,15 @@ function Post({ postID, mediaType, mediaID, Title, Content, Likes, Comments, dat
 
     const [likes, setLikes] = useState(Likes);
 
+    const [likeColor, setLikeColor] = useState("fa-solid fa-thumbs-up cursor-pointer text-xl");
+
 
     const handleLike = async (e: React.MouseEvent<HTMLInputElement>) => {
         try {
             const element = e.target as HTMLInputElement;
 
             if (!liked) {
-                element.src = "/liked.png";
+                setLikeColor("fa-solid fa-thumbs-up cursor-pointer text-xl text-blue-500");
                 setLikes(likes + 1);
 
                 // Add a like to the post
@@ -32,7 +34,7 @@ function Post({ postID, mediaType, mediaID, Title, Content, Likes, Comments, dat
 
                 console.log(addLikeResult.data);
             } else {
-                element.src = "/like.png";
+                setLikeColor("fa-solid fa-thumbs-up cursor-pointer text-xl");
                 setLikes(likes - 1);
 
                 // Remove a like from the post
@@ -85,7 +87,7 @@ function Post({ postID, mediaType, mediaID, Title, Content, Likes, Comments, dat
             </div>
             <div className="flex justify-around items-center my-4">
                 <span className="font-bold">{likes} likes</span>
-                <input type="image" width="24" height="24" alt="Like" src="/like.png" onClick = {handleLike} />
+                <i className={likeColor} onClick={handleLike}></i>
             </div>
             <div className="flex flex-col">
                 <div className="border border-black rounded-lg my-2">{comments.map((cmt) => {return <p className="m-2 text-start" key={cmt}>- {cmt}</p>})}</div>
