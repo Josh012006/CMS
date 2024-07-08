@@ -32,6 +32,6 @@ app.get('/logout', (req, res) => {
 
 app.get('/', authMiddleware);
 
-ViteExpress.listen(app, 5000, () =>
-  console.log("http://localhost:5000 is running"),
+ViteExpress.listen(app, Number(process.env.PORT) || 5000, () =>
+  console.log(`${process.env.VITE_APP_API_URL} is running`),
 );
