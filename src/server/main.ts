@@ -30,6 +30,8 @@ app.get('/logout', (req, res) => {
   res.redirect('/');
 });
 
+console.log(process.env.PORT);
+
 app.get('/', authMiddleware);
 
 ViteExpress.listen(app, Number(process.env.PORT) || 5000, () =>
