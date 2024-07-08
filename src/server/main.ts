@@ -32,6 +32,7 @@ app.get('/logout', (req, res) => {
 
 console.log(process.env.PORT);
 
+
 app.get('/', authMiddleware);
 
 ViteExpress.listen(app, Number(process.env.PORT) || 5000, () =>
