@@ -19,7 +19,7 @@ const Login: React.FC = () => {
 
             if(user.status === 200) {
                 if(user.data.password === password) {
-                    Cookies.set('user', JSON.stringify(user.data), { expires: 5 }); // Le cookie expirera après 5 jours
+                    Cookies.set('user', JSON.stringify(user.data), { expires: 5, sameSite: 'Strict' }); // Le cookie expirera après 5 jours
                     navigate('/');
                 } else {
                     throw Error('Password is incorrect');

@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import Header from "./Header";
 
-import Cookies from "js-cookie";
-
 import axios from "axios";
 import Post from "./Post";
 
