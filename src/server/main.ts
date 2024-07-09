@@ -30,8 +30,6 @@ app.get('/logout', (req, res) => {
   res.redirect('/');
 });
 
-console.log(process.env.PORT);
-
 
 app.get('/', authMiddleware);
 
