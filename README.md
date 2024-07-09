@@ -36,6 +36,7 @@ To get started with the Content Management Website, follow these steps:
 3. Configure the CMS settings according to your requirements. Refer to the documentation for detailed instructions. Don't forget to provide the env variables
 MONGO_URI=
 VITE_APP_API_URL=http://localhost:5000/
+PORT=5000
 
 4. Start the development server: `npm run dev`
 
