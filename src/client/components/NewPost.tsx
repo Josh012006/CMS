@@ -86,6 +86,7 @@ function NewPost () {
 
     return (
         <>
+            <h1 className='text-center font-bold text-2xl my-2'>New Post</h1>
             {error !== '' && <p className='text-red-500 text-center p-4 rounded-lg border-red-500 bg-red-200 border w-9/12 lg:w-1/4 mt-16 mx-auto'>{error}</p>}
             <form className='flex flex-col justify-around w-9/12 lg:w-1/4 mx-auto mt-28 bg-white rounded-lg p-5' onSubmit={handleSubmit}>
                 <label htmlFor="title">Title:</label>

@@ -32,9 +32,12 @@ function UserPosts() {
 
 
     return (
-        <div className="flex flex-col items-center justify-around">
-            {posts.length !== 0 && posts.map((post: any) => {return <Post key={post._id} postID={post._id} mediaType={post.mediaType} Content={post.content} mediaID={post.mediaID} Title={post.title} Likes={post.likes} Comments={post.comments} date={post.createdAt} Author={post.author} />} )}
-        </div>
+        <>
+            <h1 className='text-center font-bold text-2xl my-2'>New Post</h1>
+            <div className="flex flex-col items-center justify-around">
+                {posts.length !== 0 && posts.map((post: any) => {return <Post key={post._id} postID={post._id} mediaType={post.mediaType} Content={post.content} mediaID={post.mediaID} Title={post.title} Likes={post.likes} Comments={post.comments} date={post.createdAt} Author={post.author} />} )}
+            </div>
+        </>
     );
 }
 
