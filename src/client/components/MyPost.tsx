@@ -12,7 +12,7 @@ function MyPost() {
         <>
             <Header />
             <div className="flex flex-col items-center w-full">
-                <h1 className="font-bold text-xl my-3 mx-auto">My Posts</h1>
+                <h1 className="font-bold text-xl my-3 mx-auto">Posts</h1>
                 <div className="flex justify-around mx-auto items-center">
                     <button type="button" className="text-white mx-2 bg-black p-2 rounded-lg my-3" onClick={()=> {navigate('/posts/myposts')}}>See my posts</button>
                     <button type="button" className="text-white mx-2 bg-black p-2 rounded-lg my-3" onClick={()=> {navigate('/posts/newPost')}}>Add new post</button>
