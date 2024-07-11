@@ -29,7 +29,7 @@ The setup is done with Vite-Express and it is a MongoDB database.
 
 To get started with the Content Management Website, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repo.git`
+1. Clone the repository: `git clone https://github.com/Josh012006/CMS.git`
 
 2. Install the necessary dependencies: `npm install`
 
